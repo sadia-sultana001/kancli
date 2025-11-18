@@ -53,8 +53,8 @@ func (t *Task) Next() {
 	}
 }
 
-func NewTask(status status, title, description string) *Task {
-	return &Task{status: status, title: title, description: description}
+func NewTask(status status, title, description string) Task {
+	return Task{status: status, title: title, description: description}
 }
 
 func (t Task) FilterValue() string {
